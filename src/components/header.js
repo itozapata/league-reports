@@ -1,19 +1,28 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import Grid from 'react-bootstrap/lib/Grid'
-import Row from 'react-bootstrap/lib/Row'
-import Col from 'react-bootstrap/lib/Col'
+import React, { Component } from 'react'
+
+import { LinkContainer } from 'react-router-bootstrap'
+// eslint-disable-next-line
+import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap'
 
 class Header extends Component {
   render() {
     return (
       <header>
-        <Grid>
-          <Row className="show-grid">
-            <Col xs={12} md={8}><Link to='/'>Home</Link></Col>
-            <Col xs={6} md={4}><Link to="/another-thing">Another Thing</Link></Col>
-          </Row>
-        </Grid>
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+                Pmint
+            </Navbar.Brand>
+          </Navbar.Header>
+          <Nav>
+            <LinkContainer to="/home">
+              <NavItem eventKey={1}>Home</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/another-thing">
+              <NavItem eventKey={2}>Another Thing</NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar>
       </header>
     );
   }

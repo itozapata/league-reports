@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
+import BarChart from './graphs/bar-chart'
+import StackedToGroupedBarChart from './graphs/stacked-to-grouped-bar-chart'
 
 class Home extends Component {
   render() {
@@ -9,11 +11,16 @@ class Home extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/components/main.js</code> and save to reload.
-        </p>
+        {/*<BarChart data={[5, 10, 1, 3]} size={[500, 500]}/>*/}
+        <div>
+          <form>
+            <label><input type="radio" name="mode" value="grouped" />Grouped</label>
+            <label><input type="radio" name="mode" value="stacked" checked />Stacked</label>
+          </form>
+          <StackedToGroupedBarChart/>
+        </div>
       </div>
-    );
+    )
   }
 }
 

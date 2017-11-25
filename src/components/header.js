@@ -11,7 +11,7 @@ class Header extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-                Pmint
+                PMint
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
@@ -20,6 +20,11 @@ class Header extends Component {
             </IndexLinkContainer>
             <LinkContainer to="/another-thing">
               <NavItem eventKey={2}>Another Thing</NavItem>
+            </LinkContainer>
+          </Nav>
+          <Nav pullRight>
+            <LinkContainer to="/login">
+              <NavItem eventKey={3}>Login</NavItem>
             </LinkContainer>
           </Nav>
         </Navbar>

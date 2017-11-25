@@ -89,7 +89,7 @@ class StackedToGroupedBarChart extends Component {
       y.domain([0, yMax]);
 
       rect.transition()
-        .duration(1000)
+        .duration(300)
         .delay(function(d, i) { return i * 10; })
         .attr("x", function(d, i) { return x(i) + x.bandwidth() / n * this.parentNode.__data__.key; })
         .attr("width", x.bandwidth() / n)
@@ -102,7 +102,7 @@ class StackedToGroupedBarChart extends Component {
       y.domain([0, y1Max]);
 
       rect.transition()
-        .duration(1000)
+        .duration(300)
         .delay(function(d, i) { return i * 10; })
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })

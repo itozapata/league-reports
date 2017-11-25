@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
 // eslint-disable-next-line
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap'
 
@@ -15,9 +15,9 @@ class Header extends Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
-            <LinkContainer to="/home">
+            <IndexLinkContainer to="/">
               <NavItem eventKey={1}>Home</NavItem>
-            </LinkContainer>
+            </IndexLinkContainer>
             <LinkContainer to="/another-thing">
               <NavItem eventKey={2}>Another Thing</NavItem>
             </LinkContainer>

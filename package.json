@@ -2,6 +2,7 @@
   "name": "league-reports",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://itozapata.github.com/league-reports",
   "dependencies": {
     "d3": "4.12.0",
     "lodash": "4.17.4",
@@ -16,12 +17,16 @@
     "redux": "^3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "help": "gh-pages --help"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "gh-pages": "^1.1.0"
   }
 }

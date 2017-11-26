@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://itozapata.github.com/league-reports",
   "dependencies": {
+    "amazon-cognito-auth-js": "^1.0.0",
     "d3": "4.12.0",
     "lodash": "4.17.4",
     "prop-types": "15.6.0",

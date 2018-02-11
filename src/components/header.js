@@ -18,8 +18,8 @@ class Header extends Component {
             <IndexLinkContainer to="/">
               <NavItem eventKey={1}>Home</NavItem>
             </IndexLinkContainer>
-            <LinkContainer to="/another-thing">
-              <NavItem eventKey={2}>Another Thing</NavItem>
+            <LinkContainer to="/dc-js-dashboard">
+              <NavItem eventKey={2}>DC.js Dashboard</NavItem>
             </LinkContainer>
           </Nav>
           <Nav pullRight>

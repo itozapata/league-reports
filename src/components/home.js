@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-import BarChart from './graphs/bar-chart'
+// import BarChart from './graphs/bar-chart'
 import StackedToGroupedBarChart from './graphs/stacked-to-grouped-bar-chart'
 
 class Home extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Home from './home'
-import AnotherThing from './another-thing'
+import DcDashboard from './dc-dashboard'
 
 class Main extends Component {
   render() {
@@ -9,7 +9,7 @@ class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/another-thing' component={AnotherThing}/>
+          <Route exact path='/dc-js-dashboard' component={DcDashboard}/>
         </Switch>
       </main>
     );

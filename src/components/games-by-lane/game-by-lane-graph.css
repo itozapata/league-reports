@@ -1,0 +1,11 @@
+.dc-chart g.row text {fill: black;}
+
+.dc-chart text.pie-slice {fill: black;}
+
+div.dc-chart { float: none!important; }
+
+.games-by-lane-report-container {
+    width: auto;
+    margin-right: auto;
+    margin-left: 5%;
+}

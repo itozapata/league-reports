@@ -21,6 +21,9 @@ class Header extends Component {
             <LinkContainer to="/dc-js-dashboard">
               <NavItem eventKey={2}>DC.js Dashboard</NavItem>
             </LinkContainer>
+            <LinkContainer to="/games-by-lane">
+              <NavItem eventKey={3}>Games By Lane</NavItem>
+            </LinkContainer>
           </Nav>
           <Nav pullRight>
             <LinkContainer to="/login">

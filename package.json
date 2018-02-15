@@ -2,7 +2,7 @@
   "name": "league-reports",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itozapata.github.com/league-reports",
+  "homepage": "http://league-reports.s3-website-us-east-1.amazonaws.com",
   "dependencies": {
     "amazon-cognito-auth-js": "^1.0.0",
     "bootstrap": "3.3.7",
@@ -31,6 +31,5 @@
     "help": "gh-pages --help"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
   }
 }

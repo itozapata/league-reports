@@ -15,7 +15,7 @@ let store = createStore(todoApp)
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename="/league-reports">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </Provider>,

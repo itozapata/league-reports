@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Sets up the resources needed for the web environment for the league analytics service.
+Resources:
+  WebHosting:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: league-reports
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      AdminCreateUserConfig:
+        AllowAdminCreateUserOnly: true
+      UserPoolName: league-reports
